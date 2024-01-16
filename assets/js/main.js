@@ -213,7 +213,6 @@
    */
   new Swiper('.portfolio-details-slider', {
     speed: 400,
-    loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
@@ -224,9 +223,7 @@
       clickable: true
     }
   });
-  window.addEventListener('load', () => {
-    aos_init();
-  });
+
   /**
    * Animation on scroll
    */
