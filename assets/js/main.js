@@ -228,34 +228,4 @@
     aos_init();
   });
 /**
-   * Preloader
-   */
-const preloader = document.querySelector('#preloader');
-if (preloader) {
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      preloader.classList.add('loaded');
-    }, 1000);
-    setTimeout(() => {
-      preloader.remove();
-    }, 2000);
-  });
-}
-  /**
-   * Animation on scroll
-   */
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-      mirror: false
-    });
-  });
-
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
-
-})()
+)()
