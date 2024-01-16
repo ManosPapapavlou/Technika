@@ -224,7 +224,9 @@
       clickable: true
     }
   });
-  
+  window.addEventListener('load', () => {
+    aos_init();
+  });
   /**
    * Animation on scroll
    */
